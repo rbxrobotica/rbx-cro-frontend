@@ -19,14 +19,14 @@ const Section: React.FC<SectionProps> = ({ title, description, imageUrl }) => {
           <p className="sectionDescription">{description}</p>
           <div className="sectionActions">
             <Link
-              href="cadastrar"
+              href="form/PassoUm"
               className="sectionFinancingButton"
             >
               Obter Financiamento
             </Link>
-            <Link href="saibamais" className="sectionSaibaMaisLink">
+            {/* <Link href="saibamais" className="sectionSaibaMaisLink">
               Saiba mais <span aria-hidden="true">→</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
