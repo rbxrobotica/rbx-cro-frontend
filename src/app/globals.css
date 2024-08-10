@@ -1,0 +1,407 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+main{
+  min-height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .ProductCard {
+    width: 100%;
+  }
+}
+
+.logo {
+  position: relative;
+  top: 0;
+}
+
+.cromo-blue {
+  background-color: #3eb1be;
+}
+
+.menu-background {
+  background-color: black;
+}
+
+.sectionContainer {
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.sectionContent {
+  width: 100%;
+  display: table;
+  padding: 0;
+}
+
+.sectionImage {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionImage img {
+  max-width: 500px;
+  min-width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+.sectionText {
+  display: table-cell;
+  width: 100%;
+  padding: 1em;
+  float: left;
+  text-align: left;
+  color: white;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.sectionActions {
+  display: relative;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sectionFinancingButton {
+  float: left;
+  width: fit-content;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-size: 0.8em;
+  background-color: #3eb1be;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sectionFinancingButton:hover {
+  background-color: #0056b3;
+}
+
+.sectionSaibaMaisLink {
+  float: left;
+  margin-top: 5px;
+  white-space: nowrap;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: color 0.3s ease;
+}
+
+.sectionSaibaMaisLink:hover {
+  color: #007bff;
+}
+
+.footer {
+  width: 100%;
+  color: white;
+  margin-top:40px;
+  padding-bottom:20px;
+  padding-left: 30px;
+}
+
+.footer-cromo {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.footer-direitos {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.footer-local {
+  width: 100%;
+  margin-top: 24px;
+  margin-left: 0px;
+  font-size: 15px;
+}
+
+.footer-contatos {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-photo-icone {
+  width:16px;
+  color: rgb(12, 100, 12);
+  float: left;
+  margin-right: 12px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: left;
+  justify-content: center;
+  min-height: 40vh;
+  background-color: black;
+}
+.login-container h2 {
+  padding:1em;
+  color: #666;
+}
+.login-container input {
+  margin-top: 8px;
+  border: 1px solid gray;
+  background-color: black;
+  padding: 0.8em;
+  align-items: left;
+  justify-content: center;
+  min-height: 8vh;
+}
+
+.login-container button {
+  background-color: #007bff;
+  color: #fff;
+  margin: 0.8em;
+  padding: 0.4em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.quem-somos {
+  color: white;
+  margin: 2em;
+}
+
+.quem-somos-titulo {
+  padding: 2em;
+  font-size: 18px;
+}
+
+.quem-somos-missao-valores {
+  padding: 3em;
+}
+
+.quem-somos-missao {
+  padding: 1em;
+}
+
+.quem-somos-valores {
+  padding: 1em;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 18px;
+}
+
+.formulario h1 {
+  margin: 15px;
+  font-size: 18px;
+  color: #3eb1be;
+}
+
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  min-height: 40vh;
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .formulario-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .formulario-container {
+    width: 100%;
+  }
+}
+
+.formulario-container input,
+.formulario-container select {
+  width: 100%;
+  margin-bottom: 8px;
+  min-height: 8vh;
+  align-items: left;
+  justify-content: center;
+  background-color: #1F1F1F;
+  padding: 0.8em;
+  padding-right: 1.5em;
+  cursor: pointer;
+}
+
+.formulario-container button {
+  background-color: #007bff;
+  color: #fff;
+  margin: 0.8em;
+  padding: 0.4em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario-container button:hover {
+  background-color: #0056b3;
+}
+
+.formulario-buttons-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr); 
+  grid-gap: 10px;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.formulario-button-prev {
+  grid-column: 1 / span 1;
+}
+
+.formulario-button-next {
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formulario-button-submit button {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: default;
+}
+
+.formulario-button-submit:hover button {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.formulario-button-submit:active button {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.formulario-button-submit.enabled button {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  cursor: pointer;
+}
+
+.formulario-button-submit.enabled:hover button {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+.formulario-button-submit.enabled:active button {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.formulario-input {
+  display: grid;
+}
+
+.formulario-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  background-color: #333333;
+  border-color: #1F1F1F;
+}
+
+.list-disc {
+  list-style-type: disc;
+  color: gray;
+  margin-top:30px;
+  margin-left: 20px;
+}
+
+.checkbox-container {
+  display: table;
+  padding: 5px;
+}
+
+.checkbox-container-input-div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.checkbox-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+}
+
+.checkbox-text:hover {
+  cursor: pointer;
+}
+
+
