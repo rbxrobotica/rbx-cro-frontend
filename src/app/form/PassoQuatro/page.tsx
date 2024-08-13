@@ -11,9 +11,9 @@ interface PostBody {
   password: string;
   is_parceiro: boolean;
   detalhes: {
-    parceiroFullname: string;
-    parceiroEmail: string;
-    parceiroCpfCnpj: string;
+    parceiro_fullname: string;
+    parceiro_email: string;
+    parceiro_cpf_cnpj: string;
     nome: string;
     datanasc: string;
     estado_civil: string;
@@ -68,9 +68,9 @@ const PassoQuatro = () => {
       password: 'default',
       is_parceiro: formState.isParceiro,
       detalhes: {
-        parceiroFullname: formState.parceiroFullname,
-        parceiroEmail: formState.parceiroEmail,
-        parceiroCpfCnpj: formState.parceiroCpfCnpj,
+        parceiro_fullname: formState.parceiroFullname,
+        parceiro_email: formState.parceiroEmail,
+        parceiro_cpf_cnpj: formState.parceiroCpfCnpj,
         nome: formState.fullname,
         datanasc: formState.dataNasc,
         estado_civil: formState.estadoCivil,
@@ -104,11 +104,15 @@ const PassoQuatro = () => {
       }      
     };
 
-    console.log('User registered successfully:', postBody);
-    
+    console.log('User registered successfully2:', postBody);
+
+
+    // mudar
+
+
     try {
       const response = await axios.post(
-        'https://backend.cromofinanciamentos.com.br/api/register/',
+        'http://localhost:8000/api/register/',
         postBody,
         {
           headers: {
