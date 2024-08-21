@@ -26,9 +26,9 @@ interface PostBody {
     pai: string;
     nacionalidade: string;
     residencia_estado: string;
-    residencial_cidade: string;
+    residencia_cidade: string;
     residencia_endereco: string;
-    residencial_cep: string;
+    residencia_cep: string;
     classe_profissional: string;
     profissao: string;
     valor_patrimonio: number;
@@ -85,9 +85,9 @@ const PassoQuatro = () => {
         pai: formState.pai,
         nacionalidade: formState.nacionalidade,
         residencia_estado: formState.residenciaEstado,
-        residencial_cidade: formState.residenciaCidade,
+        residencia_cidade: formState.residenciaCidade,
         residencia_endereco: formState.residenciaEndereco,
-        residencial_cep: formState.residenciaCep,
+        residencia_cep: formState.residenciaCep,
         classe_profissional: formState.classeProfissional,
         profissao: formState.profissao,
         valor_patrimonio: formState.valorPatrimonio,
