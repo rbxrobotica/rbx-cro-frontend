@@ -22,6 +22,8 @@ interface FormState {
   nacionalidade: string;
   residenciaEstado: string;
   residenciaCidade: string;
+  residenciaEndereco: string;
+  residenciaCep: string;
   classeProfissional: string;
   profissao: string;
   valorPatrimonio: number;
@@ -70,6 +72,8 @@ export const FormProvider = ({ children }: { children: ReactNode }) => {
     nacionalidade: '',
     residenciaEstado: '',
     residenciaCidade: '',
+    residenciaEndereco: '',
+    residenciaCep: '',
     classeProfissional: '',
     profissao: '',
     valorPatrimonio: 0,

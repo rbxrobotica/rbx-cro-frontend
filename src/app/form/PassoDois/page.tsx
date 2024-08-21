@@ -114,6 +114,30 @@ const PassoDois = () => {
             required
           />
         </label>
+        <label htmlFor="residenciaEndereco">
+          Endereço Residencial Completo:
+          <input
+            id="residenciaEndereco"
+            name="residenciaEndereco"
+            placeholder=""
+            type="text"
+            value={formState.residenciaEndereco}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label htmlFor="residenciaCep">
+          CEP Residencial:
+          <input
+            id="residenciaCep"
+            name="residenciaCep"
+            placeholder=""
+            type="text"
+            value={formState.residenciaCep}
+            onChange={handleChange}
+            required
+          />
+        </label>
         <label htmlFor="classeProfissional">
           Classe Profissional:
           <input

@@ -1,6 +1,6 @@
 'use client';
 
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import { useFormContext } from '@/context/FormContext';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
@@ -27,6 +27,8 @@ interface PostBody {
     nacionalidade: string;
     residencia_estado: string;
     residencial_cidade: string;
+    residencia_endereco: string;
+    residencial_cep: string;
     classe_profissional: string;
     profissao: string;
     valor_patrimonio: number;
@@ -84,6 +86,8 @@ const PassoQuatro = () => {
         nacionalidade: formState.nacionalidade,
         residencia_estado: formState.residenciaEstado,
         residencial_cidade: formState.residenciaCidade,
+        residencia_endereco: formState.residenciaEndereco,
+        residencial_cep: formState.residenciaCep,
         classe_profissional: formState.classeProfissional,
         profissao: formState.profissao,
         valor_patrimonio: formState.valorPatrimonio,
@@ -104,12 +108,6 @@ const PassoQuatro = () => {
       }      
     };
 
-    console.log('User registered successfully2:', postBody);
-
-
-    // mudar
-
-
     try {
       const response = await axios.post(
         'https://backend.cromofinanciamentos.com.br/api/register/',
@@ -128,8 +126,9 @@ const PassoQuatro = () => {
         // router.push('/obrigado');
         setIsSubmitted(true);
       } else {
-        console.error('Error submitting form:', response);
+        console.error('Error submitting form');
         // Display error message to the user (optional)
+        // console.error('Error submitting form:', response);
       }
     } catch (error) {
       if (axios.isAxiosError(error)) {
@@ -139,12 +138,15 @@ const PassoQuatro = () => {
         console.error('Error headers:', error.response?.headers);
       } else if (error instanceof Error) {
         // Log other errors
-        console.error('Error message:', error.message);
+        console.error('Error');
+        // console.error('Error message:', error.message);
       } else {
         // Log unknown errors
-        console.error('Unknown error:', error);
+        console.error('Unknown error');
+        // console.error('Unknown error:', error);
       }
-      console.error('Error config:', error);
+      console.error('Error config');
+      // console.error('Error config:', error);
     }
   };
 
