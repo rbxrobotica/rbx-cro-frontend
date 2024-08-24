@@ -8,8 +8,7 @@ const Financiamentos: React.FC = () => {
 
       <p>
         Na <strong>Cromo Financiamentos</strong>, transformar sonhos em realidade é a nossa paixão!
-        Há mais de [Insira aqui quantos anos a empresa atua no mercado], somos
-        especialistas em realizar o sonho da casa própria, do carro novo, da moto
+        Desde 1997 somos especialistas em realizar o sonho da casa própria, do carro novo, da moto
         desejada, do caminhão que impulsiona seu negócio ou da embarcação que te leva
         para momentos inesquecíveis.
       </p>
