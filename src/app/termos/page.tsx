@@ -2,8 +2,8 @@ import React from 'react';
 
 const Termos: React.FC = () => {
   return (
-    <div className="quem-somos">
-      <h1 className="quem-somos-titulo">Termos de Uso</h1>
+    <div>
+      <h1>Termos de Uso</h1>
 
       <h2>Introdução</h2>
 
@@ -25,7 +25,6 @@ const Termos: React.FC = () => {
       <h2>Rescisão</h2>
 
       <p>Podemos suspender ou encerrar sua conta a qualquer momento, por qualquer motivo.</p>
-
     </div>
   );
 };
