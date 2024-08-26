@@ -5,48 +5,46 @@ const Politica: React.FC = () => {
     <div className="quem-somos">
       <h1 className="quem-somos-titulo">Política de Privacidade</h1>
 
-      <p>
-        Na <strong>Cromo Financiamentos</strong>, transformar sonhos em realidade é a nossa paixão!
-        Desde 1997 somos especialistas em realizar o sonho da casa própria, do carro novo, da moto
-        desejada, do caminhão que impulsiona seu negócio ou da embarcação que te leva
-        para momentos inesquecíveis.
-      </p>
+      <h2>Introdução</h2>
 
-      <section className="financiamentos-missao-valores">
-        <h2>Nossa Missão e Valores</h2>
+      <p>A Cromo Financiamentos valoriza a privacidade de seus usuários e está comprometida em proteger seus dados pessoais. Esta Política de Privacidade descreve como coletamos, utilizamos, divulgamos e protegemos as informações que você nos fornece ao utilizar nossos serviços.</p>
 
-        <div className="financiamentos-missao">
-          <h3>Missão</h3>
-          <p>
-            Oferecer soluções financeiras personalizadas para cada cliente, com
-            <strong> taxas competitivas</strong>, <strong>parcelas que cabem no seu bolso</strong> e um
-            <strong> atendimento excepcional</strong>.
-          </p>
-        </div>
+      <h2>Quais dados coletamos</h2>
 
-        <div className="financiamentos-valores">
-          <h3>Valores</h3>
-          <ul>
-            <li>
-              <strong>Confiança:</strong> Acreditamos na construção de
-              relacionamentos duradouros e transparentes com nossos clientes.
-            </li>
-            <li>
-              <strong>Agilidade:</strong> Buscamos a rapidez e a eficiência em todos
-              os processos, para que você realize seus sonhos o quanto antes.
-            </li>
-            <li>
-              <strong>Inovação:</strong> Estamos sempre buscando novas soluções para
-              atender às suas necessidades de forma cada vez mais completa.
-            </li>
-            <li>
-              <strong>Compromisso:</strong> Assumimos o compromisso de oferecer a
-              melhor experiência possível para cada cliente.
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
+      <p>Informações de contato (nome, email, telefone)</p>
+      <p>Informações de detalhes pessoais(renda,)</p >
+      <p>Dados de navegação(endereço IP, histórico de navegação)</p >
+
+      <h2>Como utilizamos seus dados</h2>
+
+      <p>Para fornecer e melhorar nossos serviços</p>
+      <p>Para personalizar sua experiência</p>
+      <p>Para entrar em contato com você</p>
+
+      <h2>Compartilhamento de dados</h2>
+
+      <p>Não compartilhamos seus dados pessoais com terceiros, exceto quando exigido por lei ou para prestar os serviços solicitados.</p>
+
+      <h2>Segurança dos dados</h2>
+
+      <p>Implementamos medidas de segurança técnicas e administrativas para proteger seus dados contra acesso não autorizado, divulgação, alteração ou destruição.</p>
+
+      <h2>Cookies</h2>
+
+      <p>Utilizamos cookies para melhorar sua experiência. Você pode configurar seu navegador para recusar cookies, mas isso pode afetar a funcionalidade do site.</p>
+
+      <h2>Alterações nesta política</h2>
+
+      <p>Podemos atualizar esta política de privacidade periodicamente. As alterações serão publicadas nesta página.</p>
+
+      <h2>Seus direitos</h2>
+
+      <p>Você tem o direito de acessar, corrigir ou excluir seus dados pessoais.</p>
+
+      <h2>Contato</h2>
+
+      <p>Para qualquer dúvida sobre esta política, entre em contato conosco através de contato@cromofinanciamentos.com.br</p>
+    </div >
   );
 };
 
