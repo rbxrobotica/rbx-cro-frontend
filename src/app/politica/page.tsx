@@ -2,8 +2,10 @@ import React from 'react';
 
 const Politica: React.FC = () => {
   return (
-    <div>
-      <h1>Política de Privacidade</h1>
+    <div className="page-text">
+      <div className="page-text-title">
+        <h1>Política de Privacidade</h1>
+      </div>
 
       <h2>Introdução</h2>
 

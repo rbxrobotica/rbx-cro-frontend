@@ -21,6 +21,17 @@ body {
   background: black;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;  
+  margin-bottom: 1rem; 
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -404,4 +415,20 @@ main{
   cursor: pointer;
 }
 
+.page-text {
+  color: white;
+  margin: 2em;
+}
 
+.papage-text-title {
+  padding: 2em;
+  font-size: 18px;
+}
+
+.page-text-session {
+  padding: 3em;
+}
+
+.page-text-session-inside {
+  padding: 1em;
+}

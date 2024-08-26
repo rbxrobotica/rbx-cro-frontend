@@ -2,8 +2,11 @@ import React from 'react';
 
 const Termos: React.FC = () => {
   return (
-    <div>
-      <h1>Termos de Uso</h1>
+    <div className="page-text">
+      
+      <div className="page-text-title">
+        <h1>Termos de Uso</h1>
+      </div>
 
       <h2>Introdução</h2>
 
