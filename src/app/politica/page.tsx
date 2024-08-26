@@ -1,10 +1,9 @@
 import React from 'react';
-import Layout from "@/components/Layout";
 
-const Financiamentos: React.FC = () => {
+const Politica: React.FC = () => {
   return (
     <div className="quem-somos">
-      <h1 className="quem-somos-titulo">Financiamentos</h1>
+      <h1 className="quem-somos-titulo">Política de Privacidade</h1>
 
       <p>
         Na <strong>Cromo Financiamentos</strong>, transformar sonhos em realidade é a nossa paixão!
@@ -51,4 +50,4 @@ const Financiamentos: React.FC = () => {
   );
 };
 
-export default Financiamentos;
+export default Politica;
